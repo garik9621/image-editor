@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+  <input type="range" id="light" min="0" max="150" value="70"> Light<br>
+  <input type="range" id="brightness" min="0" max="200" value="100"> Brightness<br>
+  <input type="range" id="contrast" min="0" max="200" value="100"> Contrast<br>
+  <input type="range" id="saturation" min="0" max="200" value="100"> Saturation<br>
+  <input type="range" id="inversion" min="0" max="100" value="0"> Inversion<br>
+  <input type="range" id="blur" min="0" max="20" value="0"> Blur<br>
+  <input type="range" id="hue" min="0" max="360" value="0"> Hue<br>
+  <input type="button" id="zoom-in"> ZoomIn<br>
+  <input type="button" id="zoom-out"> Zoom Out<br>
+  <input type="file" id="image"> Image <br>
+  <hr>
+    <canvas id="canvas" width="300" height="300"></canvas>
+  <style>
+    #canvas {
+      cursor: move;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC");;
+      background-repeat: repeat;
+    }
+  </style>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
